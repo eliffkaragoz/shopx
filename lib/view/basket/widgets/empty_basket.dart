@@ -24,7 +24,7 @@ class EmptyBasket extends StatelessWidget {
           ),
           context.emptySizedHeightBoxLow,
           CustomText(
-            text: "Open polls will appear here",
+            text: "Added products will appear here",
             fontSize: 18,
             color: ColorConstant.instance.dark2,
           ),
