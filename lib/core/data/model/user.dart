@@ -4,13 +4,10 @@
 
 import 'dart:convert';
 
-import 'package:hive/hive.dart';
-
 User? userFromJson(String str) => User.fromJson(json.decode(str));
 
 String userToJson(User? data) => json.encode(data!.toJson());
 
-@HiveType(typeId: 1)
 class User {
   User({
     this.status,
