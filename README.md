@@ -35,7 +35,6 @@ This is a shopping application demo managed with provider state management.
 
 
 
-Get Packages from terminal
 ```
    git clone https://github.com/eliffkaragoz/shopx.git
 
