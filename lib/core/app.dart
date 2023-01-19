@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:task/core/init/routes/navigation_service.dart';
 import 'package:task/core/init/theme/custom_theme.dart';
+import 'package:task/core/l10n/app_l10n.dart';
 import 'package:task/core/provider/multi_provider_init.dart';
 import 'package:task/core/init/routes/app_routes.dart';
 import 'package:task/view/splash/splash_view.dart';
@@ -21,6 +22,8 @@ class App extends StatelessWidget {
         title: "ShopShop",
         theme: CustomTheme.customThemeData(context),
         debugShowCheckedModeBanner: false,
+        localizationsDelegates: L10n.localizationsDelegates,
+        supportedLocales: L10n.supportedLocales,
       ),
     );
   }

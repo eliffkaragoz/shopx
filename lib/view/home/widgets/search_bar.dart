@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 import 'package:task/core/constants/color_constant.dart';
+import 'package:task/core/l10n/app_l10n.dart';
 
 class SearchBar extends StatelessWidget {
   const SearchBar({
@@ -22,7 +23,7 @@ class SearchBar extends StatelessWidget {
             decoration: InputDecoration(
               contentPadding: EdgeInsets.symmetric(
                   horizontal: context.dynamicWidth(0.03), vertical: 0),
-              hintText: "Search here...",
+              hintText: L10n.of(context)!.searchHere,
               enabledBorder: _buildOutlineInputBorder(context),
               focusedBorder: _buildOutlineInputBorder(context),
               suffixIcon: const Icon(Icons.search),

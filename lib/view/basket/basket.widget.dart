@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
+import 'package:task/core/l10n/app_l10n.dart';
 import 'package:task/view/common_widgets/custom_auto_size_text.dart';
 import 'package:task/core/constants/color_constant.dart';
 import 'package:task/view/basket/basket.viewmodel.dart';
@@ -57,7 +58,7 @@ class BasketWidgets {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const CustomText(text: "Total", fontSize: 14),
+        CustomText(text: L10n.of(context)!.total, fontSize: 14),
         CustomText(
           text: "${provider.basketTotalPrice(context)},00 ₺",
           fontWeight: FontWeight.w700,

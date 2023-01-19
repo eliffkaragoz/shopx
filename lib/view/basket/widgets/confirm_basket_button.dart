@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
+import 'package:task/core/l10n/app_l10n.dart';
 import 'package:task/view/common_widgets/custom_auto_size_text.dart';
 import 'package:task/core/constants/color_constant.dart';
 
@@ -14,7 +15,7 @@ class ConfirmBasketButton extends StatelessWidget {
         onPressed: () {},
         child: CustomText(
           color: ColorConstant.instance.light,
-          text: "Confirm Basket",
+          text: L10n.of(context)!.confirmBasket,
         ),
       ),
     );

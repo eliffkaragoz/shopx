@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task/core/l10n/app_l10n.dart';
 import 'package:task/view/common_widgets/custom_app_bar.dart';
 import 'package:task/view/common_widgets/custom_grid_delegate.dart';
 import 'package:task/view/basket/basket.viewmodel.dart';
@@ -6,9 +7,7 @@ import 'package:task/view/product_card/product_card.dart';
 
 class HomeWidgets {
   PreferredSizeWidget appBar(BuildContext context) {
-    return const CustomAppBar(
-      titleText: "Welcome !",
-    );
+    return CustomAppBar(titleText: L10n.of(context)!.welcome);
   }
 
   Widget productList(BuildContext context, snapshot, BasketViewModel provider) {

@@ -1,0 +1,12 @@
+{
+    "@@locale": "en",
+    "welcome" : "Welcome!",
+    "searchHere":"Search here...",
+    "emptyBasketText":"No added product yet. Added products will appear here.",
+    "basket":"Basket",
+   "confirmBasket" :"Confirm Basket" ,
+   "total":"Total"
+
+
+
+}

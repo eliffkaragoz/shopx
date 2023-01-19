@@ -1,0 +1,14 @@
+{
+    "@@locale": "tr",
+    "welcome" : "Hoşgeldiniz!",
+    "searchHere":"Buradan ara...",
+    "emptyBasketText":"Henüz ürün eklenmemiş. Eklenen ürünler burada görüntülenecektir.",
+    "basket":"Sepet",
+   "confirmBasket" :"Sepeti Onayla" ,
+      "total":"Toplam"
+
+    
+
+
+ }
+

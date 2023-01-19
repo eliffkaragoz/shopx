@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
+import 'package:task/core/l10n/app_l10n.dart';
 import 'package:task/view/common_widgets/custom_auto_size_text.dart';
 import 'package:task/core/constants/color_constant.dart';
 
@@ -18,15 +19,10 @@ class EmptyBasket extends StatelessWidget {
           ),
           context.emptySizedHeightBoxLow3x,
           CustomText(
-            text: "No added product yet ",
+            text: L10n.of(context)!.emptyBasketText,
             color: ColorConstant.instance.dark2,
             fontSize: 18,
-          ),
-          context.emptySizedHeightBoxLow,
-          CustomText(
-            text: "Added products will appear here",
-            fontSize: 18,
-            color: ColorConstant.instance.dark2,
+            maxLines: 2,
           ),
         ],
       ),
