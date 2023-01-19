@@ -289,6 +289,23 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.2.0"
+<<<<<<< HEAD
+=======
+  hive:
+    dependency: transitive
+    description:
+      name: hive
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.2.3"
+  hive_generator:
+    dependency: "direct dev"
+    description:
+      name: hive_generator
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
+>>>>>>> 697c778809cb0ae5c462c472b6313a4238b82948
   http:
     dependency: transitive
     description:
