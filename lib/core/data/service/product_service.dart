@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:dio/dio.dart';
+// ignore: depend_on_referenced_packages
 import 'package:logger/logger.dart';
 import 'package:task/core/constants/api_config.dart';
 import 'package:task/core/data/model/one_product.dart';
