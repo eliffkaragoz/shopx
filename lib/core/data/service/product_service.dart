@@ -7,7 +7,7 @@ import 'package:task/core/data/model/one_product.dart';
 import 'package:task/core/data/model/product.dart';
 import 'package:task/core/base/base_service.dart';
 
-class ProductService extends BaseService {
+class ProductService extends INetworkService {
   Future<List<ProductDatum?>?> getProducts({String? query}) async {
     try {
       Response response = await dio!.get(ApiConfig.instance.productUrl);

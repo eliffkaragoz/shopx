@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 import 'package:provider/provider.dart';
+import 'package:task/core/init/routes/navigation_service.dart';
 import 'package:task/view/common_widgets/custom_auto_size_text.dart';
 import 'package:task/view/common_widgets/custom_viewer_image.dart';
 import 'package:task/core/constants/color_constant.dart';
 import 'package:task/core/data/enum/routes.enum.dart';
 import 'package:task/core/data/service/category_service.dart';
-import 'package:task/core/init/routes/custom_navigator.dart';
 import 'package:task/gen/assets.gen.dart';
 
 import '../common_widgets/custom_circular_progress_indicator.dart';
@@ -40,7 +40,7 @@ class DrawerWidgets {
   InkWell categoryItem(BuildContext context, snapshot, int index) {
     return InkWell(
         onTap: () {
-          CustomNavigator.goToScreen(context, Routes.categoryDetail.name);
+          CustomNavigator.instance.navigateToPage(Routes.categoryDetail.name);
           context.read<CategoryDetailViewModel>().categoryDetail =
               snapshot.data![index]!;
           CategoryDetailViewModel()

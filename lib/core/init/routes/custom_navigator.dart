@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
+// import 'package:flutter/material.dart';
 
-class CustomNavigator {
-  static Future goToScreen(BuildContext context, path) {
-    return Navigator.pushNamed(context, path);
-  }
-}
+// class CustomNavigator {
+//   // static Future goToScreen(BuildContext context, path) {
+//   //   return Navigator.pushNamed(context, path);
+//   // }
+// }

@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
 
-abstract class BaseService {
+abstract class INetworkService {
   Dio? dio;
 
-  BaseService() {
+  INetworkService() {
     dio = Dio(BaseOptions());
   }
 }
