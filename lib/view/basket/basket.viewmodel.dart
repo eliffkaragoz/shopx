@@ -20,7 +20,7 @@ class BasketViewModel extends IViewModel<BasketViewModel> {
     notifyListeners();
   }
 
-  void increseProduct(ProductDatum product) {
+  void decrementProduct(ProductDatum product) {
     int? index;
     for (var item in basketProducts) {
       if (item["product"].id == product.id) {

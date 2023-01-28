@@ -9,10 +9,10 @@ import 'package:task/view/product_card/widgets/count_card.dart';
 import 'package:kartal/kartal.dart';
 
 class ProductCardWidgets {
-  CustomIconButton increseButton(BasketViewModel provider, product) {
+  CustomIconButton decrementButton(BasketViewModel provider, product) {
     return CustomIconButton(
       onPressed: () {
-        provider.increseProduct(product);
+        provider.decrementProduct(product);
       },
       icon: Icons.remove,
     );
